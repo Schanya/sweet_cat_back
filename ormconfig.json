@@ -1,0 +1,8 @@
+{
+    "type": "postgres",
+    "port": 5432,
+    "username": "Postgres",
+    "password": "SCH08",
+    "database": "cats_db",
+    "synchronize": true
+}
