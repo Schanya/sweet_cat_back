@@ -1,0 +1,11 @@
+{
+	"type": "postgres",
+	"port": 5432,
+	"username": "postgres",
+	"password": "SCH08",
+	"synchronize": true,
+	"database": "cats_db",
+	"entities": [
+		"dist/**/*.entity{.ts,.js}"
+	]
+}
