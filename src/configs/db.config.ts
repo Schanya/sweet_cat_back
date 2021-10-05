@@ -1,4 +1,6 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
+import { Cat } from 'src/entities/cats/cats.entity';
+import { Breed } from 'src/entities/cats_breeds/cats_breeds.entity';
 
 const dbconfig: TypeOrmModuleOptions = {
   type: 'postgres',
@@ -7,8 +9,8 @@ const dbconfig: TypeOrmModuleOptions = {
   username: process.env.POSTGRES_DB_USERNAME || 'postgres',
   password: process.env.POSTGRES_DB_PASSWORD || 'SCH08',
   database: process.env.POSTGRES_DB_NAME || 'cats_db',
-  entities: [],
-  synchronize: false,
+  entities: [Cat, Breed],
+  synchronize: true,
 };
 
 export { dbconfig };
