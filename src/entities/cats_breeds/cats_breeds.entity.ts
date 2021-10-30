@@ -1,4 +1,4 @@
-import { Cat } from 'src/entities/cats/cats.entity';
+import { Cat } from 'src/entities/cats/cat.entity';
 import {
   Entity,
   Column,
