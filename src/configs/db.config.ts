@@ -1,5 +1,5 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
-import { Cat } from 'src/entities/cats/cats.entity';
+import { Cat } from 'src/entities/cats/cat.entity';
 import { Breed } from 'src/entities/cats_breeds/cats_breeds.entity';
 
 const dbconfig: TypeOrmModuleOptions = {
